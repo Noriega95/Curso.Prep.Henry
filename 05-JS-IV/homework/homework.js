@@ -30,6 +30,7 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
+  objeto[metodo]();
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
@@ -115,13 +116,14 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-  // for (i in usuarios) {
-  //   if (this.esPremium == false) {
-  //     esPremium: true;
-  //   }
-  // }
-  // return usuarios;
-}
+//   let cambia = function (str) {
+//     this.esPremium = str;
+//     for (usuario in usuarios) {
+//       cambia(true);
+//     }
+//   };
+//   return usuarios;
+// }
 
 function sumarLikesDeUsuario(usuario) {
   // "usuario" tiene una propiedad llamada "posts" que es un array
@@ -130,8 +132,15 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-  
-}
+//   for (posts in usuario) {
+//     for (likes in post) {
+//       let total = function(likes){
+//       return likes.reduce(function (a,b){
+//         return a + b}
+//         ,0)
+//     }
+//   }
+// }
 
 function agregarMetodoCalculoDescuento(producto) {
   // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"
@@ -143,6 +152,7 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
+  
 }
 
 // No modificar nada debajo de esta línea
